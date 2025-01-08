@@ -10,7 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Loader from "./components/Loader.jsx";
 import Contact from "./components/Contact/Contact.jsx";
-import Work from "./components/Work/work.jsx";
+import Work from "./components/Work/Work.jsx";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
