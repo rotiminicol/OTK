@@ -64,7 +64,7 @@ const Services = () => {
         <div className="container">
           {/* Heading section */}
           <div className="text-center mb-20">
-            <h1 className="text-4xl font-bold text-blue-800">
+            <h1 className="text-4xl font-bold text-blue-900">
               We work with:
             </h1>
           </div>

@@ -34,7 +34,7 @@ const Banner = () => {
               <div className="flex flex-col justify-center gap-6 sm:pt-0">
                 <h1
                   data-aos="fade-up"
-                  className="text-3xl sm:text-4xl font-bold font-cursive text-blue-500"
+                  className="text-3xl sm:text-4xl font-bold font-cursive text-yellow-400"
                 >
                   Driving Success with Winning Ads
                 </h1>
@@ -72,9 +72,9 @@ const Banner = () => {
                   </div>
                   <div
                     data-aos="slide-left"
-                    className="border-l-4 border-blue-500 pl-6 space-y-2"
+                    className="border-l-4 border-blue-900 pl-6 space-y-2"
                   >
-                    <h1 className="text-2xl font-semibold font-cursive text-blue-500">
+                    <h1 className="text-2xl font-semibold font-cursive text-blue-900">
                       Partner with Us
                     </h1>
                     <p className="text-sm text-gray-500">

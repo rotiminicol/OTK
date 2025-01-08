@@ -92,13 +92,13 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="py-10 mb-10 bg-blue-50">
+    <div className="py-10 mb-10 bg-white">
       <div className="container">
         {/* Header Section */}
         <div className="mb-10">
           <h1
             data-aos="fade-up"
-            className="text-center text-4xl font-bold text-blue-500"
+            className="text-center text-4xl font-bold text-yellow-500"
           >
             Our Clients Speak
           </h1>

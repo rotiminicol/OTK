@@ -13,11 +13,35 @@
     transform: rotate(360deg);
   }
 }
+body { 
+  margin-top: 60px; /* Adjust this value based on your navbar height */ 
+}
 .spin {
   animation: spin 40s linear infinite;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
 /* smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+/* Text field */
+
+.label {
+  @apply block text-yellow-400 text-sm font-normal mb-2
+}
+
+.text-field{
+  @apply block outline-none w-full px-3 py-3 text-sm bg-white border border-black rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-sky-400 focus:ring-2
+}
+
+.text-field::placeholder{
+  @apply text-yellow-500
 }
