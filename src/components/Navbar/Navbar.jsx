@@ -21,7 +21,7 @@ const Menu = [
 
 const Navbar = () => { 
   return (
-     <div className="navbar bg-gradient-to-r from-blue-700 via-black to-black shadow-md text-yellow-400"> 
+     <div className="navbar bg-gradient-to-r from-blue-900 via-black to-black shadow-md text-yellow-400"> 
      <div className="container py-2"> 
       <div className="flex justify-between items-center"> {/* Logo section */} 
         <div data-aos="fade-down" data-aos-once="true"> 

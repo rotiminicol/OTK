@@ -11,23 +11,23 @@ const ServicesData = [
     img: Img1,
     name: "Bet365",
     description:
-      "Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet.",
+      "Experience the thrill of betting with Bet365. Join today and enjoy top-notch odds and endless opportunities to win!",
     aosDelay: "100",
   },
   {
     id: 2,
     img: Img2,
-    name: "Live Cassino",
+    name: "Live Casino",
     description:
-      "Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet.",
+      "Step into the ultimate Live Casino experience. Play your favorite games in real-time with professional dealers!",
     aosDelay: "300",
   },
   {
     id: 3,
     img: Img3,
-    name: "Cassion",
+    name: "Casino",
     description:
-      "Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet.",
+      "Discover the excitement of Casino gaming. Spin the reels, hit the tables, and chase your fortune in style!",
     aosDelay: "500",
   },
   {
@@ -35,23 +35,23 @@ const ServicesData = [
     img: Img4,
     name: "Bet365",
     description:
-      "Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet.",
+      "Bet365 offers unmatched sports betting excitement. Bet on your favorite sports and enjoy thrilling promotions!",
     aosDelay: "700",
   },
   {
     id: 5,
     img: Img5,
-    name: "Live Cassino",
+    name: "Live Casino",
     description:
-      "Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet.",
+      "Immerse yourself in the Live Casino world. Engage with live dealers and experience the closest thing to being there!",
     aosDelay: "900",
   },
   {
     id: 6,
     img: Img6,
-    name: "Cassion",
+    name: "Casino",
     description:
-      "Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet.",
+      "Join the Casino frenzy. Explore a variety of games and indulge in an unforgettable gaming adventure!",
     aosDelay: "1100",
   },
 ];
@@ -76,7 +76,7 @@ const Services = () => {
                 key={service.id}
                 data-aos="fade-up"
                 data-aos-delay={service.aosDelay}
-                className="w-72 h-[350px] rounded-2xl bg-white hover:bg-blue-700 hover:text-white relative shadow-lg group"
+                className="w-72 h-[300px] rounded-2xl bg-white hover:bg-blue-700 hover:text-white relative shadow-lg group"
               >
                 {/* Image container */}
                 <div className="h-40 flex items-center justify-center overflow-hidden bg-gray-100 rounded-t-2xl">
@@ -89,7 +89,7 @@ const Services = () => {
                 {/* Text container */}
                 <div className="p-4 text-center">
                   <h1 className="text-xl font-bold">{service.name}</h1>
-                  <p className="text-gray-500 group-hover:text-white transition-colors text-sm line-clamp-2">
+                  <p className="text-gray-500 group-hover:text-white transition-colors text-xs line-clamp-2">
                     {service.description}
                   </p>
                 </div>
