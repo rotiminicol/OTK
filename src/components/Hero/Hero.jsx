@@ -34,7 +34,7 @@ const Hero = () => {
   <p
     data-aos="fade-up"
     data-aos-once="true"
-    className="text-sm lg:text-base text-center text-yellow-400"
+    className="text-xs lg:text-base text-center text-yellow-400"
   >
     CASINO MEDIA & TECH SERVICE EXPERT POWERED BY EREZ
   </p>
