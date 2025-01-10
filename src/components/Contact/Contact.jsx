@@ -28,15 +28,15 @@ const Contact = () => {
   return (
     <section
     id="contact"
-    className="section mb-16"
+    className="section mb-16 border-2 border-yellow-500 bg-gradient-to-tl from-transparent via-blue-900 to-transparent p-6"
     >
       <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
          <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
-            <h2 className="headline-2 lg:max-w-[12ch] text-yellow-400 reveal-up">
+            <h2 className="headline-2 lg:max-w-[12ch] text-black reveal-up">
             Contact me for collaboration
             </h2>
 
-            <p className="mt-3 mb-8 max-w-[50ch] text-yellow-500 lg:max-w-[30ch] reveal-up">
+            <p className="mt-3 mb-8 max-w-[50ch] text-white lg:max-w-[30ch] reveal-up">
             Reach out today to discuss your project needs and start collaborating on something amazing!
             </p>
 
