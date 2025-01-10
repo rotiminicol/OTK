@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const WorkData = [
   {
@@ -18,10 +18,25 @@ const WorkData = [
 ];
 
 const Work = () => {
-  const [likes, setLikes] = useState(WorkData.map(() => 0));
-  const [comments, setComments] = useState(WorkData.map(() => []));
+  // Initialize the state from localStorage if available
+  const [likes, setLikes] = useState(() => {
+    const savedLikes = localStorage.getItem("likes");
+    return savedLikes ? JSON.parse(savedLikes) : WorkData.map(() => 0);
+  });
+
+  const [comments, setComments] = useState(() => {
+    const savedComments = localStorage.getItem("comments");
+    return savedComments ? JSON.parse(savedComments) : WorkData.map(() => []);
+  });
+
   const [commentInputs, setCommentInputs] = useState(WorkData.map(() => false));
   const [newComment, setNewComment] = useState("");
+
+  useEffect(() => {
+    // Save the likes and comments to localStorage whenever they change
+    localStorage.setItem("likes", JSON.stringify(likes));
+    localStorage.setItem("comments", JSON.stringify(comments));
+  }, [likes, comments]);
 
   const handleLike = (index) => {
     const newLikes = [...likes];
@@ -74,7 +89,7 @@ const Work = () => {
 
               {/* Video */}
               <div className="relative w-full h-[300px] overflow-hidden">
-              <video src={service.img} muted className="w-full max-h-full object-contain" controls />
+                <video src={service.img} muted className="w-full max-h-full object-contain" controls />
               </div>
 
               {/* Footer */}
