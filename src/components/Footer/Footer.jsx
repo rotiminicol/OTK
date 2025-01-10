@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaTiktok, FaTelegram } from "react-icons/fa6";
 import FooterBg from "../../assets/pip2.png"; // Replace with a relevant ad company background
 
 const FooterLinks = [
@@ -109,13 +109,13 @@ const Footer = () => {
                     <FaInstagram className="text-3xl hover:text-blue-500 duration-300 text-yellow-400" />
                   </a>
                   <a href="https://t.me/tomsmithaccount">
-                    <FaFacebook className="text-3xl hover:text-blue-500 duration-200 text-yellow-400" />
+                  <FaTelegram className="text-3xl hover:text-blue-500 duration-200 text-yellow-400" />
                   </a>
                   <a href="https://www.facebook.com/share/14f7cyfVds/?mibextid=wwXIfr">
                     <FaFacebook className="text-3xl hover:text-blue-500 duration-200 text-yellow-400" />
                   </a>
                   <a href="https://www.tiktok.com/@online.traffic.ki?_t=ZN-8swW5SrO4Na&_r=1">
-                    <FaLinkedin className="text-3xl hover:text-blue-500 duration-200 text-yellow-400" />
+                  <FaTiktok className="text-3xl hover:text-blue-500 duration-200 text-yellow-400" />
                   </a>
                 </div>
               </div>
