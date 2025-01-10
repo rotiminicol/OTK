@@ -3,14 +3,14 @@ import { useState } from "react";
 const WorkData = [
   {
     id: 1,
-    img: "/video1.mov",
+    img: "/video1.mp4",
     name: "Bet365",
     description: "Experience the ultimate sports betting platform with seamless gameplay and live updates.",
     aosDelay: "100",
   },
   {
     id: 2,
-    img: "/video3.mov",
+    img: "/video3.mp4",
     name: "Live Cassino",
     description: "Dive into the thrilling world of live casino games, all from the comfort of your home.",
     aosDelay: "300",
