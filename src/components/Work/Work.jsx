@@ -74,11 +74,7 @@ const Work = () => {
 
               {/* Video */}
               <div className="relative w-full h-[300px] overflow-hidden">
-                <video
-                  src={service.img}
-                  className="w-full h-full object-cover"
-                  controls
-                />
+              <video src={service.img} muted className="w-full max-h-full object-contain" controls />
               </div>
 
               {/* Footer */}
@@ -110,7 +106,7 @@ const Work = () => {
                     {/* Comment Input */}
                     <textarea
                       placeholder="Write a comment..."
-                      className="w-full border border-gray-300 rounded-lg p-3 resize-none"
+                      className="w-full border border-gray-300 rounded-lg p-3 resize-none mb-4"
                       value={newComment}
                       onChange={(e) => setNewComment(e.target.value)}
                       onKeyDown={(e) => {
@@ -121,19 +117,26 @@ const Work = () => {
                       }}
                     ></textarea>
 
+                    {/* Send Button */}
+                    <button
+                      onClick={() => handleCommentSubmit(index)}
+                      className="px-6 py-2 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600"
+                    >
+                      Send
+                    </button>
+
                     {/* Scrollable Comment List */}
                     <div
-                      className="mt-2 max-h-48 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200"
+                      className="mt-4 max-h-48 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200"
                     >
                       {comments[index].map((comment, i) => (
-                        <div
-                          key={i}
-                          className="mt-3 bg-gray-100 p-3 rounded-lg"
-                        >
-                          <span className="block text-gray-700 font-semibold">
-                            User {i + 1}:
-                          </span>
-                          <p className="text-gray-600">{comment}</p>
+                        <div key={i} className="flex items-start mb-2">
+                          <div className="flex-shrink-0 bg-blue-500 text-white rounded-full h-8 w-8 flex items-center justify-center text-xs font-bold mr-2">
+                            {comment[0].toUpperCase()}
+                          </div>
+                          <div className="bg-gray-100 p-3 rounded-lg">
+                            <p className="text-sm">{comment}</p>
+                          </div>
                         </div>
                       ))}
                     </div>
