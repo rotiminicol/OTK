@@ -65,20 +65,7 @@ const Hero = () => {
               src={HeroPng}
               alt="Hero"
               className="w-[300px] sm:w-[450px] sm:scale-125 mx-auto spin"
-            />
-            <div
-              data-aos="fade-left"
-              className="bg-gradient-to-r from-blue-600 to-blue-800 p-3 rounded-xl absolute top-10 left-10"
-            >
-              <h1 className="text-yellow-400">ONLINE TRAFFIC KING</h1>
-            </div>
-            <div
-              data-aos="fade-right"
-              data-aos-offset="0"
-              className="bg-gradient-to-r from-blue-600 to-blue-800 p-3 rounded-xl absolute bottom-10 right-10"
-            >
-              <h1 className="text-yellow-400">Online Casino marketing</h1>
-            </div>
+            />   
           </div>
         </div>
       </div>

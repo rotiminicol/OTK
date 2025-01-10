@@ -47,7 +47,7 @@ const Footer = () => {
               Advertising Partner.
             </p>
             <a
-              href=""
+              href="https://www.instagram.com/online_traffice_king?igsh=MXMzdmRjZ2R5ejFmdQ%3D%3D&utm_source=qr"
               target="_blank"
               rel="noreferrer"
               className="inline-block bg-blue-900 py-2 px-4 mt-5 text-sm rounded-full hover:bg-blue-600 duration-200 text-yellow-400"
@@ -105,13 +105,16 @@ const Footer = () => {
 
                 {/* Social links */}
                 <div className="flex items-center gap-3 mt-6">
-                  <a href="#">
+                  <a href="https://www.instagram.com/online_traffice_king?igsh=MXMzdmRjZ2R5ejFmdQ%3D%3D&utm_source=qr">
                     <FaInstagram className="text-3xl hover:text-blue-500 duration-300 text-yellow-400" />
                   </a>
-                  <a href="#">
+                  <a href="https://t.me/tomsmithaccount">
                     <FaFacebook className="text-3xl hover:text-blue-500 duration-200 text-yellow-400" />
                   </a>
-                  <a href="#">
+                  <a href="https://www.facebook.com/share/14f7cyfVds/?mibextid=wwXIfr">
+                    <FaFacebook className="text-3xl hover:text-blue-500 duration-200 text-yellow-400" />
+                  </a>
+                  <a href="https://www.tiktok.com/@online.traffic.ki?_t=ZN-8swW5SrO4Na&_r=1">
                     <FaLinkedin className="text-3xl hover:text-blue-500 duration-200 text-yellow-400" />
                   </a>
                 </div>
