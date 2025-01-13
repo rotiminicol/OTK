@@ -50,7 +50,7 @@ const Footer = () => {
               href="https://www.instagram.com/online_traffice_king?igsh=MXMzdmRjZ2R5ejFmdQ%3D%3D&utm_source=qr"
               target="_blank"
               rel="noreferrer"
-              className="inline-block bg-blue-900 py-2 px-4 mt-5 text-sm rounded-full hover:bg-blue-600 duration-200 text-yellow-400"
+              className="inline-block bg-customBlue py-2 px-4 mt-5 text-sm rounded-full hover:bg-blue-600 duration-200 text-yellow-400"
             >
               Send Us a Message
             </a>
@@ -123,7 +123,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Additional Footer Text */}
-        <div className="bg-blue-900 text-center py-4">
+        <div className="bg-customBlue text-center py-4">
           <p className="text-sm">
             Online Casino Tech & Media
             <br />

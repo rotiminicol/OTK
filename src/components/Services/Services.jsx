@@ -64,7 +64,7 @@ const Services = () => {
         <div className="container">
           {/* Heading section */}
           <div className="text-center mb-20">
-            <h1 className="text-4xl font-bold text-blue-900">
+            <h1 className="text-4xl font-bold text-customBlue">
               We work with:
             </h1>
           </div>
@@ -76,7 +76,7 @@ const Services = () => {
                 key={service.id}
                 data-aos="fade-up"
                 data-aos-delay={service.aosDelay}
-                className="w-72 h-[300px] rounded-2xl bg-white hover:bg-blue-700 hover:text-white relative shadow-lg group"
+                className="w-72 h-[300px] rounded-2xl bg-white hover:bg-customBlue hover:text-white relative shadow-lg group"
               >
                 {/* Image container */}
                 <div className="h-40 flex items-center justify-center overflow-hidden bg-gray-100 rounded-t-2xl">

@@ -80,7 +80,7 @@ const Work = () => {
               className="relative flex flex-col w-[400px] md:w-[500px] bg-white rounded-3xl shadow-xl overflow-hidden transition-transform transform hover:scale-105"
             >
               {/* Header */}
-              <div className="p-6 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+              <div className="p-6 bg-gradient-to-r from-customBlue to-indigo-600 text-white">
                 <h2 className="text-3xl font-bold">{service.name}</h2>
                 <p className="mt-2 text-lg font-medium">
                   {service.description}
@@ -106,7 +106,7 @@ const Work = () => {
                   </button>
                   <button
                     onClick={() => handleComment(index)}
-                    className="flex items-center px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600"
+                    className="flex items-center px-4 py-2 bg-customBlue text-white font-semibold rounded-lg shadow-md hover:bg-blue-600"
                   >
                     💬 Comments
                     <span className="ml-2 bg-white text-blue-500 rounded-full px-2">

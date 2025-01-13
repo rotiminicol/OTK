@@ -21,7 +21,7 @@ const Menu = [
 
 const Navbar = () => { 
   return (
-     <div className="navbar bg-gradient-to-r from-blue-900 via-black to-black shadow-md text-yellow-400"> 
+     <div className="navbar bg-gradient-to-r from-customBlue via-black to-black shadow-md text-yellow-400"> 
      <div className="container py-2"> 
       <div className="flex justify-between items-center"> {/* Logo section */} 
         <div data-aos="fade-down" data-aos-once="true"> 
@@ -32,7 +32,7 @@ const Navbar = () => {
                 <li key={menu.id}> <a href={menu.link} className="inline-block text-xl py-4 px-4 text-yellow-400 hover:text-white duration-200" > {menu.name} </a> 
                 </li> ))} 
                 </ul> 
-                <a href="#contact" className="hover:scale-105 duration-200 text-yellow-400 px-4 py-2 rounded-full flex items-center gap-3 bg-blue-700 hover:bg-blue-600"> Contact Us <FaDice className="text-xl text-white drop-shadow-sm cursor-pointer" /> 
+                <a href="#contact" className="hover:scale-105 duration-200 text-yellow-400 px-4 py-2 rounded-full flex items-center gap-3 bg-customBlue hover:bg-blue-600"> Contact Us <FaDice className="text-xl text-white drop-shadow-sm cursor-pointer" /> 
                 </a>
                  </div> 
                  </div>

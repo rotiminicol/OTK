@@ -3,7 +3,7 @@ import Logo from "../../assets/kinglogo.png"; // Import the logo
 
 const Hero = () => {
   return (
-    <div className="min-h-[550px] sm:min-h-[600px] bg-blue-900 flex justify-center items-center text-white">
+    <div className="min-h-[550px] sm:min-h-[600px] bg-customBlue flex justify-center items-center text-white">
       <div className="container pb-8 sm:pb-0">
         <div className="grid grid-cols-1 sm:grid-cols-2">
 
@@ -44,7 +44,7 @@ const Hero = () => {
       href="https://www.facebook.com/share/14f7cyfVds/?mibextid=wwXIfr" 
       target="_blank" 
       rel="noopener noreferrer" 
-      className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 hover:scale-110 duration-300 text-yellow-400 text-lg sm:text-xl py-3 px-6 rounded-full shadow-lg transition-transform"
+      className="bg-gradient-to-r from-customBlue to-blue-700 hover:from-blue-600 hover:to-blue-800 hover:scale-110 duration-300 text-yellow-400 text-lg sm:text-xl py-3 px-6 rounded-full shadow-lg transition-transform"
     >
       Become Our Client
     </a> 

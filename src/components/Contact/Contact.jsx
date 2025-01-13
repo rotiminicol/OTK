@@ -28,7 +28,7 @@ const Contact = () => {
   return (
     <section
     id="contact"
-    className="section mb-16 border-2 border-yellow-500 bg-gradient-to-tl from-transparent via-blue-900 to-transparent p-6"
+    className="section mb-16 border-2 border-yellow-500 bg-gradient-to-tl from-transparent via-customBlue to-transparent p-6"
     >
       <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
          <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
