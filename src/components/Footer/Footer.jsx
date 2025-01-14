@@ -31,7 +31,7 @@ const Footer = () => {
       <div className="bg-black/60 min-h-[400px]">
         <div className="container grid lg:grid-cols-3 gap-10 pb-20 pt-5">
           {/* Company details */}
-          <div className="py-8 px-4">
+          <div className="py-8 px-4 text-center">
             <a
               href="#"
               className="font-semibold tracking-widest text-2xl sm:text-3xl font-cursive text-white"
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
 
           {/* Footer links */}
-          <div className="grid grid-cols-2 md:pl-10 py-8">
+          <div className="grid grid-cols-2 md:pl-10 py-8 text-center">
             <div>
               <h1 className="text-xl font-semibold mb-3 text-white">
                 Quick Links
@@ -114,3 +114,4 @@ const Footer = () => {
 };
 
 export default Footer;
+ 
