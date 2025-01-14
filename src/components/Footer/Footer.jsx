@@ -14,10 +14,6 @@ const FooterLinks = [
     title: "Contact",
     link: "/#contact",
   },
-  {
-    title: "Blog",
-    link: "/#blog",
-  },
 ];
 
 const bgImage = {
@@ -33,7 +29,7 @@ const Footer = () => {
   return (
     <div style={bgImage} className="text-white">
       <div className="bg-black/60 min-h-[400px]">
-        <div className="container grid md:grid-cols-3 pb-20 pt-5">
+        <div className="container grid lg:grid-cols-3 gap-10 pb-20 pt-5">
           {/* Company details */}
           <div className="py-8 px-4">
             <a
@@ -57,27 +53,9 @@ const Footer = () => {
           </div>
 
           {/* Footer links */}
-          <div className="col-span-2 grid grid-cols-2 sm:grid-cols-3 md:pl-10">
-            <div className="py-8 px-4">
-              <h1 className="text-xl font-semibold sm:text-left mb-3 text-white">
-                Important Links
-              </h1>
-              <ul className="space-y-3 text-white">
-                {FooterLinks.map((data, index) => (
-                  <li key={index}>
-                    <a
-                      href={data.link}
-                      className="inline-block hover:scale-105 duration-200 text-white"
-                    >
-                      {data.title}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            {/* Second column links */}
-            <div className="py-8 px-4">
-              <h1 className="text-xl font-semibold sm:text-left mb-3 text-white">
+          <div className="grid grid-cols-2 md:pl-10 py-8">
+            <div>
+              <h1 className="text-xl font-semibold mb-3 text-white">
                 Quick Links
               </h1>
               <ul className="space-y-3 text-white">
@@ -93,31 +71,31 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
+          </div>
 
-            {/* Company address */}
-            <div className="py-8 px-4 col-span-2 sm:col-auto">
-              <h1 className="text-xl font-semibold sm:text-left mb-3 text-white">
-                Address
-              </h1>
-              <div className="text-white">
-                <p className="mb-3">Powered by EREZ</p>
-                <p>+353871890998</p>
+          {/* Company address */}
+          <div className="py-8 px-4">
+            <h1 className="text-xl font-semibold mb-3 text-white">
+              Address
+            </h1>
+            <div className="text-white">
+              <p className="mb-3">Powered by EREZ</p>
+              <p>+353871890998</p>
 
-                {/* Social links */}
-                <div className="flex items-center gap-3 mt-6">
-                  <a href="https://www.instagram.com/online_traffice_king?igsh=MXMzdmRjZ2R5ejFmdQ%3D%3D&utm_source=qr">
-                    <FaInstagram className="text-3xl hover:text-blue-500 duration-300 text-[#C13584]" />
-                  </a>
-                  <a href="https://t.me/tomsmithaccount">
-                    <FaTelegram className="text-3xl hover:text-blue-500 duration-200 text-[#0088cc]" />
-                  </a>
-                  <a href="https://www.facebook.com/share/14f7cyfVds/?mibextid=wwXIfr">
-                    <FaFacebook className="text-3xl hover:text-blue-500 duration-200 text-[#1877F2]" />
-                  </a>
-                  <a href="https://www.tiktok.com/@online.traffic.ki?_t=ZN-8swW5SrO4Na&_r=1">
-                    <FaTiktok className="text-3xl hover:text-blue-500 duration-200 text-white" />
-                  </a>
-                </div>
+              {/* Social links */}
+              <div className="flex items-center gap-3 mt-6">
+                <a href="https://www.instagram.com/online_traffice_king?igsh=MXMzdmRjZ2R5ejFmdQ%3D%3D&utm_source=qr">
+                  <FaInstagram className="text-3xl hover:text-blue-500 duration-300 text-[#C13584]" />
+                </a>
+                <a href="https://t.me/tomsmithaccount">
+                  <FaTelegram className="text-3xl hover:text-blue-500 duration-200 text-[#0088cc]" />
+                </a>
+                <a href="https://www.facebook.com/share/14f7cyfVds/?mibextid=wwXIfr">
+                  <FaFacebook className="text-3xl hover:text-blue-500 duration-200 text-[#1877F2]" />
+                </a>
+                <a href="https://www.tiktok.com/@online.traffic.ki?_t=ZN-8swW5SrO4Na&_r=1">
+                  <FaTiktok className="text-3xl hover:text-blue-500 duration-200 text-white" />
+                </a>
               </div>
             </div>
           </div>
