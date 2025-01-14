@@ -98,7 +98,7 @@ const Testimonials = () => {
         <div className="mb-10">
           <h1
             data-aos="fade-up"
-            className="text-center text-4xl font-bold text-yellow-500"
+            className="text-center text-4xl font-bold text-blue-900"
           >
             Our Clients Speak
           </h1>
@@ -135,7 +135,7 @@ const Testimonials = () => {
                             key={index}
                             className={
                               index < data.rating
-                                ? "text-blue-500"
+                                ? "text-customBlue"
                                 : "text-gray-300"
                             }
                           />

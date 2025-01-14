@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 
 const WorkData = [
   {
@@ -18,47 +17,6 @@ const WorkData = [
 ];
 
 const Work = () => {
-  // Initialize the state from localStorage if available
-  const [likes, setLikes] = useState(() => {
-    const savedLikes = localStorage.getItem("likes");
-    return savedLikes ? JSON.parse(savedLikes) : WorkData.map(() => 0);
-  });
-
-  const [comments, setComments] = useState(() => {
-    const savedComments = localStorage.getItem("comments");
-    return savedComments ? JSON.parse(savedComments) : WorkData.map(() => []);
-  });
-
-  const [commentInputs, setCommentInputs] = useState(WorkData.map(() => false));
-  const [newComment, setNewComment] = useState("");
-
-  useEffect(() => {
-    // Save the likes and comments to localStorage whenever they change
-    localStorage.setItem("likes", JSON.stringify(likes));
-    localStorage.setItem("comments", JSON.stringify(comments));
-  }, [likes, comments]);
-
-  const handleLike = (index) => {
-    const newLikes = [...likes];
-    newLikes[index]++;
-    setLikes(newLikes);
-  };
-
-  const handleComment = (index) => {
-    const newCommentInputs = [...commentInputs];
-    newCommentInputs[index] = !newCommentInputs[index];
-    setCommentInputs(newCommentInputs);
-  };
-
-  const handleCommentSubmit = (index) => {
-    if (newComment.trim() !== "") {
-      const newComments = [...comments];
-      newComments[index] = [...newComments[index], newComment];
-      setComments(newComments);
-      setNewComment("");
-    }
-  };
-
   return (
     <div className="py-20 bg-gradient-to-b from-gray-50 to-gray-200">
       <div className="container mx-auto">
@@ -74,7 +32,7 @@ const Work = () => {
 
         {/* Cards */}
         <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
-          {WorkData.map((service, index) => (
+          {WorkData.map((service) => (
             <div
               key={service.id}
               className="relative flex flex-col w-[400px] md:w-[500px] bg-white rounded-3xl shadow-xl overflow-hidden transition-transform transform hover:scale-105"
@@ -90,73 +48,6 @@ const Work = () => {
               {/* Video */}
               <div className="relative w-full h-[300px] overflow-hidden">
                 <video src={service.img} muted className="w-full max-h-full object-contain" controls />
-              </div>
-
-              {/* Footer */}
-              <div className="p-6">
-                <div className="flex justify-between items-center">
-                  <button
-                    onClick={() => handleLike(index)}
-                    className="flex items-center px-4 py-2 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-600"
-                  >
-                    ❤️ Like
-                    <span className="ml-2 bg-white text-red-500 rounded-full px-2">
-                      {likes[index]}
-                    </span>
-                  </button>
-                  <button
-                    onClick={() => handleComment(index)}
-                    className="flex items-center px-4 py-2 bg-customBlue text-white font-semibold rounded-lg shadow-md hover:bg-blue-600"
-                  >
-                    💬 Comments
-                    <span className="ml-2 bg-white text-blue-500 rounded-full px-2">
-                      {comments[index].length}
-                    </span>
-                  </button>
-                </div>
-
-                {/* Comments Section */}
-                {commentInputs[index] && (
-                  <div className="mt-6">
-                    {/* Comment Input */}
-                    <textarea
-                      placeholder="Write a comment..."
-                      className="w-full border border-gray-300 rounded-lg p-3 resize-none mb-4"
-                      value={newComment}
-                      onChange={(e) => setNewComment(e.target.value)}
-                      onKeyDown={(e) => {
-                        if (e.key === "Enter" && !e.shiftKey) {
-                          e.preventDefault();
-                          handleCommentSubmit(index);
-                        }
-                      }}
-                    ></textarea>
-
-                    {/* Send Button */}
-                    <button
-                      onClick={() => handleCommentSubmit(index)}
-                      className="px-6 py-2 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600"
-                    >
-                      Send
-                    </button>
-
-                    {/* Scrollable Comment List */}
-                    <div
-                      className="mt-4 max-h-48 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200"
-                    >
-                      {comments[index].map((comment, i) => (
-                        <div key={i} className="flex items-start mb-2">
-                          <div className="flex-shrink-0 bg-blue-500 text-white rounded-full h-8 w-8 flex items-center justify-center text-xs font-bold mr-2">
-                            {comment[0].toUpperCase()}
-                          </div>
-                          <div className="bg-gray-100 p-3 rounded-lg">
-                            <p className="text-sm">{comment}</p>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
               </div>
             </div>
           ))}

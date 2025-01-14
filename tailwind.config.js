@@ -16,6 +16,7 @@ export default {
         dark: "#1e1e1e",
         light: "#f5f5f5",
         customBlue: '#3E4E82', 
+        customgold: '#FFC300',
       },
       container: {
         center: true,

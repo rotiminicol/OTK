@@ -16,7 +16,7 @@ const Hero = () => {
     className="flex flex-col items-center text-3xl sm:text-4xl lg:text-5xl font-bold"
   >
     <div className="flex items-center">
-      <span className="text-yellow-400">ONLINE</span>
+      <span className="text-customgold">ONLINE</span>
       <img
         src={Logo}
         alt="Logo"
@@ -25,7 +25,7 @@ const Hero = () => {
       <span
         data-aos="zoom-out"
         data-aos-delay="300"
-        className="text-yellow-400"
+        className="text-customgold"
       >
         TRAFFIC KING
       </span>
@@ -34,9 +34,16 @@ const Hero = () => {
   <p
     data-aos="fade-up"
     data-aos-once="true"
-    className="text-xs lg:text-base text-center text-yellow-400"
+    className="text-xs lg:text-base text-center text-customgold"
   >
-    CASINO MEDIA & TECH SERVICE EXPERT POWERED BY EREZ
+    CASINO MEDIA & TECH 
+  </p>
+  <p
+    data-aos="fade-up"
+    data-aos-once="true"
+    className="text-xs lg:text-base text-center text-customgold"
+  >
+     POWERED BY EREZ
   </p>
   
   <div data-aos="fade-up" data-aos-delay="400" className="flex justify-center mt-4">
@@ -44,7 +51,7 @@ const Hero = () => {
       href="https://www.facebook.com/share/14f7cyfVds/?mibextid=wwXIfr" 
       target="_blank" 
       rel="noopener noreferrer" 
-      className="bg-gradient-to-r from-customBlue to-blue-700 hover:from-blue-600 hover:to-blue-800 hover:scale-110 duration-300 text-yellow-400 text-lg sm:text-xl py-3 px-6 rounded-full shadow-lg transition-transform"
+      className="bg-gradient-to-r from-customBlue to-blue-700 hover:from-blue-600 hover:to-blue-800 hover:scale-110 duration-300 text-customgold text-lg sm:text-xl py-3 px-6 rounded-full shadow-lg transition-transform"
     >
       Become Our Client
     </a> 

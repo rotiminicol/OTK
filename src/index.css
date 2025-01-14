@@ -35,7 +35,7 @@ html {
 /* Text field */
 
 .label {
-  @apply block text-yellow-400 text-sm font-normal mb-2
+  @apply block text-white text-sm font-normal mb-2
 }
 
 .text-field{
@@ -43,5 +43,5 @@ html {
 }
 
 .text-field::placeholder{
-  @apply text-yellow-500
+  @apply text-black
 }

@@ -23,10 +23,10 @@ const AppStore = () => {
               className="space-y-6 max-w-xl mx-auto"
             >
               {/* Text Section */}
-              <h1 className="text-2xl text-center sm:text-left sm:text-4xl font-semibold text-yellow-400 pl-3">
+              <h1 className="text-2xl text-center sm:text-left sm:text-4xl font-semibold text-white pl-3">
                 Download Top Betting Apps Today
               </h1>
-              <p className="text-yellow-400 text-sm sm:text-base text-center sm:text-left">
+              <p className="text-white text-sm sm:text-base text-center sm:text-left">
                 Access the best betting platforms on your mobile devices. Download
                 Bet365, Live Cassino, and more from the Play Store or App Store
                 to enjoy seamless betting experiences anytime, anywhere.
