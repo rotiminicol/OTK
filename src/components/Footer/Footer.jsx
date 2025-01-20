@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
 
           {/* Footer links */}
-          <div className="grid grid-cols-2 md:pl-10 py-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 py-8 text-center">
             <div>
               <h1 className="text-xl font-semibold mb-3 text-white">
                 Quick Links
@@ -74,16 +74,14 @@ const Footer = () => {
           </div>
 
           {/* Company address */}
-          <div className="py-8 px-4">
-            <h1 className="text-xl font-semibold mb-3 text-white">
-              Address
-            </h1>
+          <div className="py-8 px-4 text-center">
+            <h1 className="text-xl font-semibold mb-3 text-white">Address</h1>
             <div className="text-white">
               <p className="mb-3">Powered by EREZ</p>
               <p>+353871890998</p>
 
               {/* Social links */}
-              <div className="flex items-center gap-3 mt-6">
+              <div className="flex justify-center items-center gap-3 mt-6">
                 <a href="https://www.instagram.com/online_traffice_king?igsh=MXMzdmRjZ2R5ejFmdQ%3D%3D&utm_source=qr">
                   <FaInstagram className="text-3xl hover:text-blue-500 duration-300 text-[#C13584]" />
                 </a>
@@ -102,7 +100,7 @@ const Footer = () => {
         </div>
         {/* Additional Footer Text */}
         <div className="bg-customBlue text-center py-4 text-white">
-          <p className="text-sm">
+          <p className="text-sm leading-6">
             Online Casino Tech & Media
             <br />
             Powered by EREZ
@@ -114,4 +112,3 @@ const Footer = () => {
 };
 
 export default Footer;
- 

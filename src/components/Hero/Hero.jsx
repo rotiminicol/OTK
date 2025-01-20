@@ -53,7 +53,7 @@ const Hero = () => {
       rel="noopener noreferrer" 
       className="bg-gradient-to-r from-customBlue to-blue-700 hover:from-blue-600 hover:to-blue-800 hover:scale-110 duration-300 text-customgold text-lg sm:text-xl py-3 px-6 rounded-full shadow-lg transition-transform"
     >
-      Become Our Client
+      Get Started Now
     </a> 
   </div>
 </div>
